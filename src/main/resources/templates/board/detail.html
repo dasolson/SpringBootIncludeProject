@@ -6,7 +6,7 @@
 <style type="text/css">
 .row {
 	margin: 0px auto;
-	width: 960px;
+	width: 800px;
 }
 </style>
 </head>
@@ -39,8 +39,8 @@
 					</tr>
 					<tr>
 						<td colspan="4" class="text-right">
-							<a href="#" class="btn btn-sm btn-info">수정</a>
-							<a href="#" class="btn btn-sm btn-warning">삭제</a>
+							<a th:href="@{/board/update(no=${vo.no})}" class="btn btn-sm btn-info">수정</a>
+							<a th:href="@{/board/delete(no=${vo.no})}" class="btn btn-sm btn-warning">삭제</a>
 							<a href="/board/list" class="btn btn-sm btn-success">목록</a>
 						</td>
 					</tr>
